@@ -20,6 +20,14 @@ public class Exercise5 {
         actors[3][FIRST_NAME] = "Dwayne";
         actors[3][LAST_NAME] = "Johnson";
 
+        String lexLast = actors[0][FIRST_NAME] + " " + actors[0][LAST_NAME];
+
+        for(String[] name : actors)
+            if(lexLast.compareTo(name[FIRST_NAME] + " " + name[LAST_NAME]) < 0)
+                lexLast = name[FIRST_NAME] + " " + name[LAST_NAME];
+
+        System.out.println(lexLast);
+
         // TASK:
         // Determine, then print the last lexicographically actor name:
         // OUTPUT: Tom Hanks
