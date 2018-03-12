@@ -9,7 +9,7 @@ public class Exercise3 {
         // Print the current date using
         // LocalDate.format in the following format:
         // DD.MM.YYYY - 12.04.1961
-        String format = LocalDate.now().format(DateTimeFormatter.ofPattern("dd.MM.YYYY"));
+        String format = LocalDate.now().format(DateTimeFormatter.ofPattern("DD.MM.YYYY"));
         System.out.println(format);
     }
 }

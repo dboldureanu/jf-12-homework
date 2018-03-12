@@ -25,7 +25,8 @@ public class Exercise6 {
         while(i < size) {
             while (j < size) {
                 if(rule.test(i, j)) {
-                    System.out.print(c + " ");
+                    System.out.print(c);
+                    consumer.accept(" ");
                 } else {
                     consumer.accept(" ");
                 }
