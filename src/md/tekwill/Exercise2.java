@@ -12,5 +12,7 @@ public class Exercise2 {
         // Third argument - year
 
         // Print the day of year (1 - 365)
+        LocalDate of = LocalDate.of(Integer.parseInt(args[2]), Integer.parseInt(args[1]), Integer.parseInt(args[0]));
+        System.out.println(of);
     }
 }

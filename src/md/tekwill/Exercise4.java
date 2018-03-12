@@ -27,5 +27,8 @@ public class Exercise4 {
         // Tom Cruise
         // Robert Downey
         // etc.
+        for(String[] actor: actors) {
+            System.out.println(actor[0] + " " + actor[1]);
+        }
     }
 }

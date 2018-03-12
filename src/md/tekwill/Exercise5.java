@@ -1,5 +1,11 @@
 package md.tekwill;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public class Exercise5 {
 
     private static int FIRST_NAME = 0;
@@ -23,5 +29,12 @@ public class Exercise5 {
         // TASK:
         // Determine, then print the last lexicographically actor name:
         // OUTPUT: Tom Hanks
+        String s = Arrays.stream(actors)
+            .map(name -> Arrays.stream(name).collect(Collectors.joining(" ")))
+            .max(Comparator.comparing(Function.identity())).get();
+
+        System.out.println(s);
+
+
     }
 }
