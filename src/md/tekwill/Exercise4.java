@@ -27,5 +27,9 @@ public class Exercise4 {
         // Tom Cruise
         // Robert Downey
         // etc.
+        for(String[] row :actors)
+            //for(String column : row)
+                System.out.println(row[FIRST_NAME] + " " + row[LAST_NAME]);
+
     }
 }

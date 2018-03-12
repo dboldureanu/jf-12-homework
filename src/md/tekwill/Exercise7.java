@@ -1,8 +1,43 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise7 {
 
     public static void main(String[] args) {
+
+        int columns = 0 , rows = 0;
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the number of rows: ");
+        rows = in.nextInt();
+
+        System.out.println("Enter the number of columns");
+        columns = in.nextInt();
+
+
+        for(int i = 0 ; i < rows ; i++)
+        {
+            if(i != 0)
+            {
+                System.out.print("|");
+            }
+            System.out.println("");
+            for(int k = 0 ; k < columns ; k++)
+                System.out.print("----");
+
+            System.out.println("");
+
+            for(int j = 0 ; j < columns ; j++)
+            {
+                System.out.print("|" + (i + 1) * (j + 1) +  " ");
+
+                if(j == columns-1 && i == rows-1)
+                    System.out.print("|");
+            }
+        }
+
         /*
         * Read 2 integers using keyboard.
         * First integer is the nr or rows
