@@ -23,5 +23,6 @@ public class Exercise5 {
         // TASK:
         // Determine, then print the last lexicographically actor name:
         // OUTPUT: Tom Hanks
+
     }
 }
