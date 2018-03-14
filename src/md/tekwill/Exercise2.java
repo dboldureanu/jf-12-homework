@@ -19,6 +19,6 @@ public class Exercise2 {
 
         LocalDate someDate = LocalDate.of(year,month,day);
 
-        System.out.println(someDate);
+        System.out.println(someDate.getDayOfYear());
     }
 }
